@@ -65,9 +65,9 @@ class MainActivity : AppCompatActivity() {
     private suspend fun display(student: Student) {
 
         withContext(Dispatchers.Main){
-            binding.etFirstName.setText(student.firstName)
-            binding.etLastName.setText(student.lastName)
-            binding.etRollNo.setText(student.rollNo.toString())
+            binding.tvFirstName.text = student.firstName
+            binding.tvLastName.text = student.lastName
+            binding.tvRollNo.text = student.rollNo.toString()
         }
 
     }
